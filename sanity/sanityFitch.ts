@@ -1,5 +1,5 @@
 import { createClient, groq } from "next-sanity";
-import { about, banner, work, products } from "../types/product";
+import { about, banner, work, products } from "../types/product"
 // import { promises } from "readline";
 // import { banner, product } from "../types/product";
 
@@ -14,7 +14,7 @@ const client = createClient({
 });
 
 
-export async function getAbout(): promise<about[]> {
+export async function getAbout(): Promise<about[]> {
 
     return client.fetch(
         groq`*[_type == "about"]{

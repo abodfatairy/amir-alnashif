@@ -20,8 +20,8 @@ export type banner = {
 export type about = {
     _id: string;
     _createdAt: string;
-    image: string;
-    details: string;
+    image?: string;
+    details?: string;
 }
 export type work = {
     _id: string;
