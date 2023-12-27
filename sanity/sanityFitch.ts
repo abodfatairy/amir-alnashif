@@ -25,7 +25,7 @@ export async function getAbout(): Promise<about[]> {
                 }`
     )
 }
-export async function getProduct(): promise<products> {
+export async function getProduct(): Promise<products> {
 
     return client.fetch(
         groq`*[_type == "products"]{
@@ -88,7 +88,7 @@ export async function getWrok(): Promise<work[]> {
     )
 
 }
-export async function getSingleWork(slug: string): promise<work> {
+export async function getSingleWork(slug: string): Promise<work> {
 
     return client.fetch(
         groq`*[_type == "work" && slug.current == $slug][0]{
