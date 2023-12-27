@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+
+    .clip-your {
+ 
+        clip-path: polygon(0 0, 100% 0%, 100% 76%, 0% 100%);
+ 
+    }
+ 
+ }
+ .cos{
+
+    /* z-index: 2; */
+ }
+ .cos::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 166, 0, 0.672);
+    z-index: 2;
+    display: block;
+    clip-path: polygon(50% 0%, 0% 100%, 31% 49%);
+ }
+ .cos::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 166, 0, 0.672);
+    z-index: -2;
+    display: block;
+    clip-path: polygon(50% 0%, 0% 100%, 31% 49%);
+ }
